@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Retro Affiliate Store</title>
+    <style>
+        /* Retro eCommerce Styles */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            padding-bottom: 50px;
+            /* Added padding to make space for footer */
+        }
+
+        header {
+            background-color: #0A74DA;
+            /* Classic blue */
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 1.5em;
+            position: relative;
+        }
+
+        #countdown-timer {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ffcc00;
+            /* Golden yellow for highlight */
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            margin: 15px;
+            padding: 20px;
+            border: 3px solid #0A74DA;
+            /* Retro border */
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            /* Product hover effect */
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            font-size: 1.3em;
+            margin: 10px 0;
+            color: #0A74DA;
+            /* Title color */
+        }
+
+        .product p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        .product a {
+            background-color: #ff9900;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .product a:hover {
+            background-color: #ff7f00;
+            /* Slight hover effect for Buy Now button */
+        }
+
+        footer {
+            background-color: #0A74DA;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+        }
+
+        .restock-note {
+            margin-top: 15px;
+            font-size: 1em;
+            color: #888;
+        }
+
+        .countdown {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #ffcc00;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .highlight {
+            font-size: 1.5em;
+            color: #ffcc00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Amazon Affiliate Store</h1>
+        <div id="countdown-timer">
+            Time left for next stock: <span id="timer">Loading...</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="1.jpg" alt="Product Image 1">
+            <h3>Product Name 1</h3>
+            <p>$99.99</p>
+            <a href="https://www.amazon.com/dp/PRODUCT_ID_1?tag=YOUR_AFFILIATE_ID" target="_blank">Buy Now</a>
+
+        </div>
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="1.jpg" alt="Product Image 2">
+            <h3>Product Name 2</h3>
+            <p>$149.99</p>
+            <a href="https://www.amazon.com/dp/PRODUCT_ID_2?tag=YOUR_AFFILIATE_ID" target="_blank">Buy Now</a>
+            
+        </div>
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="1.jpg" alt="Product Image 3">
+            <h3>Product Name 3</h3>
+            <p>$129.99</p>
+            <a href="https://www.amazon.com/dp/PRODUCT_ID_3?tag=YOUR_AFFILIATE_ID" target="_blank">Buy Now</a>
+            
+        </div>
+        <!-- Product 4 -->
+        <div class="product">
+            <img src="1.jpg" alt="Product Image 4">
+            <h3>Product Name 4</h3>
+            <p>$79.99</p>
+            <a href="https://www.amazon.com/dp/PRODUCT_ID_4?tag=YOUR_AFFILIATE_ID" target="_blank">Buy Now</a>
+            
+        </div>
+        <!-- Product 5 -->
+        <div class="product">
+            <img src="1.jpg" alt="Product Image 5">
+            <h3>Product Name 5</h3>
+            <p>$199.99</p>
+            <a href="https://www.amazon.com/dp/PRODUCT_ID_5?tag=YOUR_AFFILIATE_ID" target="_blank">Buy Now</a>
+            
+        </div>
+        <!-- Product 6 -->
+        <div class="product">
+            <img src="1.jpg" alt="Product Image 6">
+            <h3>Product Name 6</h3>
+            <p>$49.99</p>
+            <a href="https://www.amazon.com/dp/PRODUCT_ID_6?tag=YOUR_AFFILIATE_ID" target="_blank">Buy Now</a>
+            
+        </div>
+        <!-- Product 7 -->
+        <div class="product">
+            <img src="1.jpg" alt="Product Image 7">
+            <h3>Product Name 7</h3>
+            <p>$59.99</p>
+            <a href="https://www.amazon.com/dp/PRODUCT_ID_7?tag=YOUR_AFFILIATE_ID" target="_blank">Buy Now</a>
+            
+        </div>
+        <!-- Product 8 -->
+        <div class="product">
+            <img src="1.jpg" alt="Product Image 8">
+            <h3>Product Name 8</h3>
+            <p>$89.99</p>
+            <a href="https://www.amazon.com/dp/PRODUCT_ID_8?tag=YOUR_AFFILIATE_ID" target="_blank">Buy Now</a>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p>Affiliate Disclosure: As an Amazon Associate, I earn from qualifying purchases.</p>
+        
+    </footer>
+
+    <script>
+        // Countdown Timer for Restock (Time left until midnight)
+        function updateCountdown() {
+            var now = new Date().getTime();  // Current time
+            var nextStock = new Date();
+            nextStock.setHours(24, 0, 0, 0); // Set the time to 12:00 AM (midnight)
+
+            var distance = nextStock - now; // Time difference in milliseconds
+
+            if (distance < 0) {
+                nextStock.setDate(nextStock.getDate() + 1); // If time passed midnight, set to next day
+                distance = nextStock - now;
+            }
+
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the header
+            document.getElementById("timer").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+
+            // Update the timer every second
+            setTimeout(updateCountdown, 1000);
+        }
+
+        // Start countdown
+        updateCountdown();
+    </script>
+
+</body>
+
+</html>
